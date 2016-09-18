@@ -7,17 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C55A0EF1D8EAC6A00AC782E /* getIP.sh in Resources */ = {isa = PBXBuildFile; fileRef = 8C55A0EA1D8EAC6A00AC782E /* getIP.sh */; };
+		8C55A0F01D8EAC6A00AC782E /* LogList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C55A0EC1D8EAC6A00AC782E /* LogList.m */; };
+		8C55A0F11D8EAC6A00AC782E /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8C55A0EE1D8EAC6A00AC782E /* ReadMe.txt */; };
 		8CF025B61D8E7E91000F65A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF025B51D8E7E91000F65A0 /* main.m */; };
 		8CF025B91D8E7E91000F65A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF025B81D8E7E91000F65A0 /* AppDelegate.m */; };
 		8CF025BC1D8E7E91000F65A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF025BB1D8E7E91000F65A0 /* ViewController.m */; };
 		8CF025BF1D8E7E91000F65A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF025BD1D8E7E91000F65A0 /* Main.storyboard */; };
 		8CF025C11D8E7E91000F65A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CF025C01D8E7E91000F65A0 /* Assets.xcassets */; };
 		8CF025C41D8E7E91000F65A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF025C21D8E7E91000F65A0 /* LaunchScreen.storyboard */; };
-		8CF025CE1D8E7ED2000F65A0 /* LogList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF025CD1D8E7ED2000F65A0 /* LogList.m */; };
-		8CF025D11D8E8EF6000F65A0 /* getIP.sh in Sources */ = {isa = PBXBuildFile; fileRef = 8CF025CF1D8E8EF6000F65A0 /* getIP.sh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C55A0EA1D8EAC6A00AC782E /* getIP.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = getIP.sh; sourceTree = "<group>"; };
+		8C55A0EB1D8EAC6A00AC782E /* LogList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogList.h; sourceTree = "<group>"; };
+		8C55A0EC1D8EAC6A00AC782E /* LogList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogList.m; sourceTree = "<group>"; };
+		8C55A0ED1D8EAC6A00AC782E /* LogListHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogListHeader.h; sourceTree = "<group>"; };
+		8C55A0EE1D8EAC6A00AC782E /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
 		8CF025B11D8E7E91000F65A0 /* LogList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF025B51D8E7E91000F65A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8CF025B71D8E7E91000F65A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,11 +34,6 @@
 		8CF025C01D8E7E91000F65A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CF025C31D8E7E91000F65A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CF025C51D8E7E91000F65A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8CF025CC1D8E7ED2000F65A0 /* LogList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogList.h; path = LogList/LogList.h; sourceTree = "<group>"; };
-		8CF025CD1D8E7ED2000F65A0 /* LogList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LogList.m; path = LogList/LogList.m; sourceTree = "<group>"; };
-		8CF025CF1D8E8EF6000F65A0 /* getIP.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = getIP.sh; path = LogList/getIP.sh; sourceTree = "<group>"; };
-		8CF025D21D8E9183000F65A0 /* LogListHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogListHeader.h; sourceTree = "<group>"; };
-		8CF025D41D8E98A4000F65A0 /* ReadMe.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = ReadMe.txt; path = LogList/ReadMe.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +47,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C55A0E91D8EAC6A00AC782E /* LogList */ = {
+			isa = PBXGroup;
+			children = (
+				8C55A0EA1D8EAC6A00AC782E /* getIP.sh */,
+				8C55A0EB1D8EAC6A00AC782E /* LogList.h */,
+				8C55A0EC1D8EAC6A00AC782E /* LogList.m */,
+				8C55A0ED1D8EAC6A00AC782E /* LogListHeader.h */,
+				8C55A0EE1D8EAC6A00AC782E /* ReadMe.txt */,
+			);
+			path = LogList;
+			sourceTree = "<group>";
+		};
 		8CF025A81D8E7E91000F65A0 = {
 			isa = PBXGroup;
 			children = (
@@ -65,7 +78,7 @@
 		8CF025B31D8E7E91000F65A0 /* LogList */ = {
 			isa = PBXGroup;
 			children = (
-				8CF025CB1D8E7EB1000F65A0 /* LogList */,
+				8C55A0E91D8EAC6A00AC782E /* LogList */,
 				8CF025B71D8E7E91000F65A0 /* AppDelegate.h */,
 				8CF025B81D8E7E91000F65A0 /* AppDelegate.m */,
 				8CF025BA1D8E7E91000F65A0 /* ViewController.h */,
@@ -85,18 +98,6 @@
 				8CF025B51D8E7E91000F65A0 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		8CF025CB1D8E7EB1000F65A0 /* LogList */ = {
-			isa = PBXGroup;
-			children = (
-				8CF025CC1D8E7ED2000F65A0 /* LogList.h */,
-				8CF025CD1D8E7ED2000F65A0 /* LogList.m */,
-				8CF025CF1D8E8EF6000F65A0 /* getIP.sh */,
-				8CF025D21D8E9183000F65A0 /* LogListHeader.h */,
-				8CF025D41D8E98A4000F65A0 /* ReadMe.txt */,
-			);
-			name = LogList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +161,8 @@
 			files = (
 				8CF025C41D8E7E91000F65A0 /* LaunchScreen.storyboard in Resources */,
 				8CF025C11D8E7E91000F65A0 /* Assets.xcassets in Resources */,
+				8C55A0EF1D8EAC6A00AC782E /* getIP.sh in Resources */,
+				8C55A0F11D8EAC6A00AC782E /* ReadMe.txt in Resources */,
 				8CF025BF1D8E7E91000F65A0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,9 +191,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CF025BC1D8E7E91000F65A0 /* ViewController.m in Sources */,
-				8CF025D11D8E8EF6000F65A0 /* getIP.sh in Sources */,
 				8CF025B91D8E7E91000F65A0 /* AppDelegate.m in Sources */,
-				8CF025CE1D8E7ED2000F65A0 /* LogList.m in Sources */,
+				8C55A0F01D8EAC6A00AC782E /* LogList.m in Sources */,
 				8CF025B61D8E7E91000F65A0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +350,7 @@
 				8CF025CA1D8E7E91000F65A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
