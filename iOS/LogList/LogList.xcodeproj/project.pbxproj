@@ -14,6 +14,7 @@
 		8CF025C11D8E7E91000F65A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CF025C01D8E7E91000F65A0 /* Assets.xcassets */; };
 		8CF025C41D8E7E91000F65A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF025C21D8E7E91000F65A0 /* LaunchScreen.storyboard */; };
 		8CF025CE1D8E7ED2000F65A0 /* LogList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF025CD1D8E7ED2000F65A0 /* LogList.m */; };
+		8CF025D11D8E8EF6000F65A0 /* getIP.sh in Sources */ = {isa = PBXBuildFile; fileRef = 8CF025CF1D8E8EF6000F65A0 /* getIP.sh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,9 @@
 		8CF025C51D8E7E91000F65A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CF025CC1D8E7ED2000F65A0 /* LogList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogList.h; path = LogList/LogList.h; sourceTree = "<group>"; };
 		8CF025CD1D8E7ED2000F65A0 /* LogList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LogList.m; path = LogList/LogList.m; sourceTree = "<group>"; };
+		8CF025CF1D8E8EF6000F65A0 /* getIP.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = getIP.sh; path = LogList/getIP.sh; sourceTree = "<group>"; };
+		8CF025D21D8E9183000F65A0 /* LogListHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogListHeader.h; sourceTree = "<group>"; };
+		8CF025D41D8E98A4000F65A0 /* ReadMe.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = ReadMe.txt; path = LogList/ReadMe.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,9 @@
 			children = (
 				8CF025CC1D8E7ED2000F65A0 /* LogList.h */,
 				8CF025CD1D8E7ED2000F65A0 /* LogList.m */,
+				8CF025CF1D8E8EF6000F65A0 /* getIP.sh */,
+				8CF025D21D8E9183000F65A0 /* LogListHeader.h */,
+				8CF025D41D8E98A4000F65A0 /* ReadMe.txt */,
 			);
 			name = LogList;
 			sourceTree = "<group>";
@@ -99,6 +106,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CF025C81D8E7E91000F65A0 /* Build configuration list for PBXNativeTarget "LogList" */;
 			buildPhases = (
+				8CF025D31D8E94D8000F65A0 /* ShellScript */,
 				8CF025AD1D8E7E91000F65A0 /* Sources */,
 				8CF025AE1D8E7E91000F65A0 /* Frameworks */,
 				8CF025AF1D8E7E91000F65A0 /* Resources */,
@@ -158,12 +166,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8CF025D31D8E94D8000F65A0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export Path=\"$(find -L . | grep getIP.sh)\"\nbash ${Path}";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8CF025AD1D8E7E91000F65A0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8CF025BC1D8E7E91000F65A0 /* ViewController.m in Sources */,
+				8CF025D11D8E8EF6000F65A0 /* getIP.sh in Sources */,
 				8CF025B91D8E7E91000F65A0 /* AppDelegate.m in Sources */,
 				8CF025CE1D8E7ED2000F65A0 /* LogList.m in Sources */,
 				8CF025B61D8E7E91000F65A0 /* main.m in Sources */,

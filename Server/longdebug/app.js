@@ -22,11 +22,18 @@ io.on('connection', function (socket) {
   console.log('User Connected Id: ' + socket.id);
 
   socket.on('debug', function (data) {
-    io.emit('display', data);
+    var str = "[" +(new Date()).toISOString() + "] " + data;
+    io.emit('display', str);
+    console.log(str);
+  });
+
+  socket.on('clear', function (data) {
+    console.log("Clear List");
+    io.emit('clear', data);
   });
 
   io.on('disconnect', function (socket) {
-    console.log('User disconnect.');
+    console.log('User disconnected.');
   });
 });
 

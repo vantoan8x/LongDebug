@@ -23,32 +23,42 @@
     <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
     <script>
+    	var isMobile = navigator.userAgent.indexOf("Mobile") >= 0;
+
 		var socket = io();
-		socket.on('connection', function() {
-			sendLog("Connected!");
-		});
-
-		socket.on('display', function(msg) {
-        	$('#loglist').append($('<li>').text(msg));
-		});
-
-		socket.on('clear', function(msg) {
-        	$('#loglist').empty();
-		});
-
-		$('form').submit(function() {
-			sendLog($('#mbox').val());
-			$('#mbox').val('');
-			return false;
-		});
-
-		window.sendLog = function(msg) {
+		function sendLog(msg) {
 			socket.emit('debug', msg);
 		};
 
-		window.clearList = function(msg) {
-			socket.emit('clear', msg);
+		function clearList(msg) {
+			socket.emit('clear', "");
 		};
+
+
+		if(!isMobile) {
+			socket.on('connection', function() {
+				sendLog("Connected!");
+			});
+
+			socket.on('disconnect', function() {
+				sendLog("Disconnected!");
+			});
+
+			socket.on('display', function(msg) {
+	        	$('#loglist').append($('<li>').text(msg));
+			});
+
+			socket.on('clear', function(msg) {
+				console.log("Clear List");
+	        	$('#loglist').empty();
+			});
+
+			$('form').submit(function() {
+				sendLog($('#mbox').val());
+				$('#mbox').val('');
+				return false;
+			});
+		}
 
     </script>
   </body>
